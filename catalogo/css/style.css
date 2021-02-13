@@ -5,7 +5,6 @@
     letter-spacing: 0.02em;
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
 }
 
@@ -13,10 +12,6 @@ body{
     background: #eee;
 }
 
-.main{
-    max-width: 1200px;
-    
-}
 
 header{
     position: fixed;
@@ -31,7 +26,7 @@ header{
 .namelogo{
     float: left;
     color: white;
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Cinzel Decorative';
     font-size: 30px;
     padding-top: 20px;
     padding-left: 20px;
@@ -41,7 +36,8 @@ nav ul{
 
     list-style: none;
     float: right;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     text-transform: uppercase;
@@ -101,6 +97,7 @@ header.sticky{
     background-size: cover;
     clip-path: polygon(0 0, 75% 0, 35% 100%, 0 100%);
     
+    
 }
 
 .containerlogo .logo.logo2{
@@ -112,7 +109,7 @@ header.sticky{
 
 .containerlogo:hover .logo{
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    
+    transition: 0.8s;
 }
 
 .containerlogo .logo:hover{
@@ -123,39 +120,54 @@ header.sticky{
 
 
 .trabajos{
-    background: rgba(0,0,0,0.2);
+   
     margin-top: 20px;
-    color: black;
     padding: 5px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
+    
+    /*
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     border: 2px solid;
+    color: black;
+
+    */
 }
 
 .trabajos p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-size: 25px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05em;
+   
+}
+
+.trabajos p:hover{
+    text-decoration: underline green;
+    transition: 0.82s;
+
 }
 
 
 .container{
-    max-width: 1200px;
-    height: 430px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    
+    position: static;
 }
 
 .container .card{
+    
     background-size: cover;
-    width: 330px;
-    height: 430px;
+    width: 300px;
+    height: 330px;
     border-radius: 18px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     overflow: hidden;
@@ -166,10 +178,6 @@ header.sticky{
 
 }
 
-.container .card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
-}
 
 
 .container .card img{
@@ -182,7 +190,7 @@ header.sticky{
     font-weight: 600;
     color: black;
     text-transform: uppercase;
-    padding: 10px 0 30px 0;
+    padding: 5px;
 }
 
 .container .card p{
@@ -219,10 +227,53 @@ header.sticky{
 
   }
 
+  #Servicios{
+      
+  }
+
+
+  /*Gallery*/
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    position: static;
+   
+}
+
+.wrapper .gallery{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    position: static;
+}
 
 
 
+.gallery .image{
+    
+    background-size: cover;
+    width: 330px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 18px;
+    margin: 5px;
 
+}
+
+.gallery .image img{
+    background-size: cover;
+    height: 220px;
+    width: 100%;
+
+}
 
 
 

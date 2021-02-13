@@ -5,110 +5,190 @@
     <meta name="Catalogo_Vicente_Jumbo" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
     <link rel="stylesheet" href="/css/style.css">
-
+    <link rel="stylesheet" href="/js/action.js">
 
 </head>
 
 
 <body>
+    <!--Logo-->
     <section class="containerlogo">
         <div class="logo logo1">
         </div>
         <div class="logo logo2"></div>
     </section>
 
+    <!--narvar-->
     <header>
         <div class="main">
             <p class="namelogo">Vicente Jumbo</p>
             <nav>
                 <ul >
-                    <li > <a href="default.asp">Menu</a></li>
-                    <li ><a href="news.asp">Ofertas</a></li>
-                    <li ><a href="contact.asp">Contact</a></li>
+                    <li > <a href="#Servicios">Servicios</a></li>
+                    <li ><a href="#containerGalery">Albañileria</a></li>
+                    <li ><a href="#">Contacto</a></li>
                     <li ><a class="active" href="#">Cotizar</a></li>
                 </ul>
             </nav>
         </div>
-    </header>
-
-    <script type="text/javascript">
-        window.addEventListener("scroll",function(){
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-
-    </script>
-
-
-    
-
-    <div class="trabajos">
-        <p>trabajos</p>
-    </div>
-    
-    
-    <main>   
-    <div class="container">
-
-        <div class="card">
-            <img src="/img/items/albañileria">
-            <h4>Albañileria</h4>
-            
-            
-            <div>
-                <a href="#"><button class="button" > Ver más</button>  </a>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="/img/paredes/pared1.jpg">
-            <h4>Estructuras</h4>
-            
-                <div>
-                    <a href="#"><button class="button" > Ver más</button>  </a>
-                </div>
-        </div>
-
-        <div class="card">
-            <img src="/img/techo/0001.jpg" >
-            <h4>Gypsum</h4>
-            
-                <div>
-                    <a href="#"><button class="button" > Ver más</button>  </a>
-                </div>
-        </div>
-
-        <div class="card">
-            <img src="/img/items/interiores.jpg" >
-            <h4>pintura Interiores</h4>
-            
-                <div>
-                    <a href="#"><button class="button" > Ver más</button>  </a>
-                </div>
-        </div>
-
-        <div class="card">
-            <img src="/img/items/exteriores.png" >
-            <h4>Plomeria de exteriores</h4>
-            
-                <div>
-                    <a href="#"><button class="button" > Ver más</button>  </a>
-                </div>
-        </div>
-
-        <div class="card">
-            <img src="/img/items/decorativa.png" >
-            <h4>Pintura Decorativa</h4>
-            
-                <div>
-                     <a href="#"><button class="button" > Ver más</button>  </a>
-                </div>
-        </div>
 
         
+    </header>
+
+            <!--Action Script Scroll-->
+            <script type="text/javascript">
+                window.addEventListener("scroll",function(){
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                })
+
+            </script>
+
+
+    <div id="Servicios"> </div>
+    <!--Servicios-->
+    <div  class="trabajos">
+        <p>Servicios</p>
     </div>
 
-    </main>
+        <main>   
+            <div  class="container">
+                
+                <div class="card">
+                    <img src="/img/items/albañileria">
+                    <h4>Albañileria</h4>
+                    <a href="#"><button class="button" > Ver más</button>  </a>
+                </div>
+
+                <div class="card">
+                    <img src="/img/paredes/pared1.jpg">
+                    <h4>Estructuras</h4>
+                    <a href="#"><button class="button" > Ver más</button>  </a>
+                </div>
+
+                <div class="card">
+                    <img src="/img/techo/0001.jpg" >
+                    <h4>Gypsum</h4>
+                    <a href="#"><button class="button" > Ver más</button>  </a> 
+                </div>
+
+                <div class="card">
+                    <img src="/img/items/interiores.jpg" >
+                    <h4>pintura Interiores</h4>
+                    <a href="#"><button class="button" > Ver más</button>  </a>  
+                </div>
+
+                <div class="card">
+                    <img src="/img/items/exteriores.png" >
+                    <h4>Plomeria de exteriores</h4>
+                    <a href="#"><button class="button" > Ver más</button>  </a>     
+                </div>
+
+                <div class="card">
+                    <img src="/img/items/decorativa.png" >
+                    <h4>Pintura Decorativa</h4>
+                    <a href="#"><button class="button" > Ver más</button>  </a>    
+                </div>
+            </div>
+        </main>
+
+
+    <!--Albañileria-->
+    <div class="trabajos">
+        <p>Albañileria</p>
+    </div>
+
+        <div class="wrapper">
+            <div class="gallery">
+                <div class="image"> <img src="img/trash/000003.png"></div>
+                <div class="image"> <img src="img/trash/00002.png"></div>
+                <div class="image"> <img src="img/trash/4k.png"></div>
+                <div class="image"> <img src="img/trash/fondo.jpg"></div>
+                <div class="image"> <img src="img/trash/000003.png"></div>
+                <div class="image"> <img src="img/trash/00002.png"></div>
+            </div>
+
+        </div>
+
+        <div class="trabajos">
+            <p>Estructuras</p>
+        </div>
+    
+            <div class="wrapper">
+                <div class="gallery">
+                    <div class="image"> <img src="img/trash/000003.png"></div>
+                    <div class="image"> <img src="img/trash/00002.png"></div>
+                    <div class="image"> <img src="img/trash/4k.png"></div>
+                    <div class="image"> <img src="img/trash/fondo.jpg"></div>
+                    <div class="image"> <img src="img/trash/000003.png"></div>
+                    <div class="image"> <img src="img/trash/00002.png"></div>
+                </div>
+    
+            </div>
+
+            <div class="trabajos">
+                <p>Gypsum</p>
+            </div>
+        
+                <div class="wrapper">
+                    <div class="gallery">
+                        <div class="image"> <img src="img/trash/000003.png"></div>
+                        <div class="image"> <img src="img/trash/00002.png"></div>
+                        <div class="image"> <img src="img/trash/4k.png"></div>
+                        <div class="image"> <img src="img/trash/fondo.jpg"></div>
+                        <div class="image"> <img src="img/trash/000003.png"></div>
+                        <div class="image"> <img src="img/trash/00002.png"></div>
+                    </div>
+        
+                </div>
+                <div class="trabajos">
+                    <p>Pintura de Interiores</p>
+                </div>
+            
+                    <div class="wrapper">
+                        <div class="gallery">
+                            <div class="image"> <img src="img/trash/000003.png"></div>
+                            <div class="image"> <img src="img/trash/00002.png"></div>
+                            <div class="image"> <img src="img/trash/4k.png"></div>
+                            <div class="image"> <img src="img/trash/fondo.jpg"></div>
+                            <div class="image"> <img src="img/trash/000003.png"></div>
+                            <div class="image"> <img src="img/trash/00002.png"></div>
+                        </div>
+            
+                    </div>
+                    <div class="trabajos">
+                        <p>Pintura de Exteriores</p>
+                    </div>
+                
+                        <div class="wrapper">
+                            <div class="gallery">
+                                <div class="image"> <img src="img/trash/000003.png"></div>
+                                <div class="image"> <img src="img/trash/00002.png"></div>
+                                <div class="image"> <img src="img/trash/4k.png"></div>
+                                <div class="image"> <img src="img/trash/fondo.jpg"></div>
+                                <div class="image"> <img src="img/trash/000003.png"></div>
+                                <div class="image"> <img src="img/trash/00002.png"></div>
+                            </div>
+                
+                        </div>           
+
+
+                        <div class="trabajos">
+                            <p>Pintura Decorativa</p>
+                        </div>
+                    
+                            <div class="wrapper">
+                                <div class="gallery">
+                                    <div class="image"> <img src="img/trash/000003.png"></div>
+                                    <div class="image"> <img src="img/trash/00002.png"></div>
+                                    <div class="image"> <img src="img/trash/4k.png"></div>
+                                    <div class="image"> <img src="img/trash/fondo.jpg"></div>
+                                    <div class="image"> <img src="img/trash/000003.png"></div>
+                                    <div class="image"> <img src="img/trash/00002.png"></div>
+                                </div>
+                    
+                            </div>
+    
 
     <footer>
 
