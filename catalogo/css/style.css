@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
 
 *{
-    letter-spacing: 0.02em;
+    
     margin: 0;
     padding: 0;
     
@@ -21,6 +21,8 @@ header{
     box-sizing: border-box;
     background: rgba(0,0,0,0.2);
     border: 2px solid;
+    transition: 1s;
+    z-index: 100;
 }
 
 .namelogo{
@@ -30,6 +32,7 @@ header{
     font-size: 30px;
     padding-top: 20px;
     padding-left: 20px;
+    letter-spacing: 0.02em;
 }
 
 nav ul{
@@ -69,9 +72,8 @@ nav ul li a:hover{
 header.sticky{
     background: rgba(0, 0, 0, 0.856);
     transition: 2s;
+    top: -10px;
 }
-
-
 
 .containerlogo{
     background-size: cover;
@@ -79,7 +81,6 @@ header.sticky{
     position: relative;
     width: 100%;
     padding-top: 60%;
-    background: #222;
 
 }
 
@@ -115,18 +116,164 @@ header.sticky{
 .containerlogo .logo:hover{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     
+}
+
+.container_presupuesto_logo {
+    margin: 30px;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    }
+
+     .presupuesto_logo {
+        border-radius: 4px;
+        background: green;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        opacity: 0.8;
+        
+
+      }
+    
+      .presupuesto_logo:hover{
+        background: blue;
+        transition: 1s;
+      }
+
+.location{
+    margin: 30px;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+}
+
+
+
+
+
+
+/*Usuario informacion*/
+.infouser{
+    width: auto;
+    height: 650px;
+    margin: 20px;
+
+    
+}
+
+.infouser .subtittle{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+}
+.infouser .tittle{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
+    font-size: 40px;
+    color: green;
+}
+.infouser img {
+    margin-top: 50px;
+    width: calc(100% / 1.5);
+    height: calc(650px / 1.5);
+    float: right;
+}
+
+.infouser .photo {
+    margin-top: 100px;
+    background-color: white;
+    width: calc(100% / 2);
+    height: calc(650px / 2);
+    position: absolute;
+   
+}
+
+.container_punto{
+    margin-left: 30px;
+}
+
+.punto{
+    padding-top: 10px;
+    margin: 15px;
+    font-size: 17px;
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    display: block;
+    word-wrap:break-word;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
+    font-weight: 400;
+
+}
+
+/*icon check*/
+
+.fa-check-circle{
+    color: green;
+    font-size: 30px;
+}
+
+.fa-whatsapp{
+    color: white;
+    font-size: 25px;
+    text-indent: -10px;
+}
+
+.fad .fa-map-marker-alt{
+    color: red;
+    font-size: 50px;
     
 }
 
 
+/*cotizar*/
+.container_presupuesto {
+margin: 30px;
+text-align: center;
+}
+
+ .presupuesto {
+    border-radius: 4px;
+    background: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .presupuesto:hover{
+    background: blue;
+    transition: 1s;
+
+  }
+
+
+
+
+
+
+
 .trabajos{
-   
     margin-top: 20px;
     padding: 5px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    
     /*
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -143,14 +290,16 @@ header.sticky{
     text-transform: uppercase;
     font-size: 25px;
     letter-spacing: 0.05em;
-   
 }
+
 
 .trabajos p:hover{
     text-decoration: underline green;
     transition: 0.82s;
-
 }
+
+
+
 
 
 .container{
@@ -167,15 +316,14 @@ header.sticky{
     
     background-size: cover;
     width: 300px;
-    height: 330px;
+    height: 300px;
     border-radius: 18px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     overflow: hidden;
     margin: 20px;
     text-align: center;
     transition: all 0.25s;
-    background-color: rgba(128, 128, 128, 0.315);
-
+    background-color: rgba(128, 128, 128, 0.178);
 }
 
 
@@ -183,7 +331,7 @@ header.sticky{
 .container .card img{
     background-size: cover;
     width: 100%;
-    height: 240px;
+    height: 200px;
 }
 
 .container .card h4{
@@ -209,7 +357,7 @@ header.sticky{
 
 .button {
     width: 60%;
-    border-radius: 8px;
+    border-radius: 4px;
     background: green;
     border: none;
     color: white;
@@ -227,9 +375,7 @@ header.sticky{
 
   }
 
-  #Servicios{
-      
-  }
+
 
 
   /*Gallery*/
@@ -260,7 +406,7 @@ header.sticky{
 .gallery .image{
     
     background-size: cover;
-    width: 330px;
+    width: 300px;
     overflow: hidden;
     text-align: center;
     border-radius: 18px;
