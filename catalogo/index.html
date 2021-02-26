@@ -2,12 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Catalogo_Vicente_Jumbo" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Catalogo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/js/action.js">
-
 </head>
 
 
@@ -59,14 +57,7 @@
         
     </header>
 
-            <!--Action Script Scroll-->
-            <script type="text/javascript">
-                window.addEventListener("scroll",function(){
-                    var header = document.querySelector("header");
-                    header.classList.toggle("sticky", window.scrollY > 0);
-                })
 
-            </script>
 
     <!--Vicente-->
 
@@ -125,13 +116,13 @@
                 </div>
 
                 <div class="card">
-                    <img src="/img/paredes/pared1.jpg">
+                    <img src="/img/cubiertas/cubierta2.jpg">
                     <h4>Estructuras</h4>
                     <a href="#"><button class="button" > Ver más</button>  </a>
                 </div>
 
                 <div class="card">
-                    <img src="/img/techo/0001.jpg" >
+                    <img src="/img/techo/tumbados.jpg" >
                     <h4>Gypsum</h4>
                     <a href="#"><button class="button" > Ver más</button>  </a> 
                 </div>
@@ -144,7 +135,7 @@
 
                 <div class="card">
                     <img src="/img/items/exteriores.png" >
-                    <h4>Plomeria de exteriores</h4>
+                    <h4>Pintura de exteriores</h4>
                     <a href="#"><button class="button" > Ver más</button>  </a>     
                 </div>
 
@@ -158,105 +149,78 @@
 
 
     <!--Albañileria-->
-    <div class="trabajos">
-        <p>Albañileria</p>
+
+    <div class="wrapper">
+        <ul>
+            <li class="list active" data-filter="all">Todo</li>
+            <li class="list " data-filter="albañileria">Albañileria</li>
+            <li class="list " data-filter="estructuras">Estructuras</li>
+            <li class="list " data-filter="gypsum">Gypsum</li>
+            <li class="list " data-filter="pinturaInt">Pintura Interiores</li>
+            <li class="list " data-filter="pinturaExt">Pintura Exteriores</li>
+            <li class="list " data-filter="pinturaDec">Pintura Decorativa</li>
+        </ul>
+
+        
+                <div class="product" >
+                    <div class="itemBox albañileria"> <img src="/img/albañileria/001.jpg"></div>
+                    <div class="itemBox albañileria"> <img src="/img/albañileria/001.jpg"></div>
+                    <div class="itemBox albañileria"> <img src="/img/albañileria/001.jpg"></div>
+                    <div class="itemBox albañileria"> <img src="/img/albañileria/001.jpg"></div>
+
+                    <div class="itemBox estructuras"> <img src="/img/cubiertas/cubuerta1.jpg"></div>
+                    <div class="itemBox estructuras"> <img src="/img/cubiertas/cubuerta1.jpg"></div>
+                    <div class="itemBox estructuras"> <img src="/img/cubiertas/cubuerta1.jpg"></div>
+
+                    <div class="itemBox gypsum"> <img src="/img/techo/tumbados.jpg"></div>
+
+                    <div class="itemBox pinturaInt"> <img src="/img/paredes/pared1.jpg"></div>
+                    <div class="itemBox pinturaInt"> <img src="/img/paredes/pared1.jpg"></div>
+                    <div class="itemBox pinturaInt"> <img src="/img/paredes/pared1.jpg"></div>
+
+                    <div class="itemBox pinturaExt"> <img src="/img/items/exteriores.png"></div>
+
+                    <div class="itemBox pinturaDec"> <img src="/img/items/decorativa.png"></div>
+
+                </div> 
+            </div>   
     </div>
 
-        <div class="wrapper">
-            <div class="gallery">
-                <div class="image"> <img src="img/trash/000003.png"></div>
-                <div class="image"> <img src="img/trash/00002.png"></div>
-                <div class="image"> <img src="img/trash/4k.png"></div>
-                <div class="image"> <img src="img/trash/fondo.jpg"></div>
-                <div class="image"> <img src="img/trash/000003.png"></div>
-                <div class="image"> <img src="img/trash/00002.png"></div>
-            </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" 
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous"></script>
 
-        </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.list').click(function(){
+            const value = $(this).attr('data-filter');
 
-        <div class="trabajos">
-            <p>Estructuras</p>
-        </div>
-    
-            <div class="wrapper">
-                <div class="gallery">
-                    <div class="image"> <img src="img/trash/000003.png"></div>
-                    <div class="image"> <img src="img/trash/00002.png"></div>
-                    <div class="image"> <img src="img/trash/4k.png"></div>
-                    <div class="image"> <img src="img/trash/fondo.jpg"></div>
-                    <div class="image"> <img src="img/trash/000003.png"></div>
-                    <div class="image"> <img src="img/trash/00002.png"></div>
-                </div>
-    
-            </div>
+            if (value == 'all'){
+                $('.itemBox').show('1000');
+            }else{
+                $('.itemBox').not('.'+value).hide('1000');
+                $('.itemBox').filter('.'+value).show('1000');    
+            }
+        })
 
-            <div class="trabajos">
-                <p>Gypsum</p>
-            </div>
-        
-                <div class="wrapper">
-                    <div class="gallery">
-                        <div class="image"> <img src="img/trash/000003.png"></div>
-                        <div class="image"> <img src="img/trash/00002.png"></div>
-                        <div class="image"> <img src="img/trash/4k.png"></div>
-                        <div class="image"> <img src="img/trash/fondo.jpg"></div>
-                        <div class="image"> <img src="img/trash/000003.png"></div>
-                        <div class="image"> <img src="img/trash/00002.png"></div>
-                    </div>
-        
-                </div>
-                <div class="trabajos">
-                    <p>Pintura de Interiores</p>
-                </div>
-            
-                    <div class="wrapper">
-                        <div class="gallery">
-                            <div class="image"> <img src="img/trash/000003.png"></div>
-                            <div class="image"> <img src="img/trash/00002.png"></div>
-                            <div class="image"> <img src="img/trash/4k.png"></div>
-                            <div class="image"> <img src="img/trash/fondo.jpg"></div>
-                            <div class="image"> <img src="img/trash/000003.png"></div>
-                            <div class="image"> <img src="img/trash/00002.png"></div>
-                        </div>
-            
-                    </div>
-                    <div class="trabajos">
-                        <p>Pintura de Exteriores</p>
-                    </div>
-                
-                        <div class="wrapper">
-                            <div class="gallery">
-                                <div class="image"> <img src="img/trash/000003.png"></div>
-                                <div class="image"> <img src="img/trash/00002.png"></div>
-                                <div class="image"> <img src="img/trash/4k.png"></div>
-                                <div class="image"> <img src="img/trash/fondo.jpg"></div>
-                                <div class="image"> <img src="img/trash/000003.png"></div>
-                                <div class="image"> <img src="img/trash/00002.png"></div>
-                            </div>
-                
-                        </div>           
+        $('.list').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+
+    })
+
+    </script>
 
 
-                        <div class="trabajos">
-                            <p>Pintura Decorativa</p>
-                        </div>
-                    
-                            <div class="wrapper">
-                                <div class="gallery">
-                                    <div class="image"> <img src="img/trash/000003.png"></div>
-                                    <div class="image"> <img src="img/trash/00002.png"></div>
-                                    <div class="image"> <img src="img/trash/4k.png"></div>
-                                    <div class="image"> <img src="img/trash/fondo.jpg"></div>
-                                    <div class="image"> <img src="img/trash/000003.png"></div>
-                                    <div class="image"> <img src="img/trash/00002.png"></div>
-                                </div>
-                    
-                            </div>
-    
 
-    <footer>
 
-    </footer>
+                <!--Action Script Scroll-->
+                <script type="text/javascript">
+                    window.addEventListener("scroll",function(){
+                        var header = document.querySelector("header");
+                        header.classList.toggle("sticky", window.scrollY > 0);
+                    })
+                </script>
 
 </body>
 
