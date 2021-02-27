@@ -160,10 +160,11 @@ header.sticky{
 
 /*Usuario informacion*/
 .infouser{
+    padding-top: 20px;
     width: 100%;
-    height: 650px;
+    height: 550px;
     margin-top: 20px;
-    
+
 }
 
 .infouser .subtittle{
@@ -257,14 +258,17 @@ text-align: center;
 
 
 
+.espacionav{
+    height: 90px;
+    width: 100%;
 
+}
 
 .trabajos{
-    margin-top: 20px;
     padding: 5px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    
     /*
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -398,8 +402,8 @@ text-align: center;
 
 .product .itemBox{
     position: relative;
-    width: 400px;
-    height: 400PX;
+    width: 300px;
+    height: 320PX;
     margin: 5PX;
 }
 

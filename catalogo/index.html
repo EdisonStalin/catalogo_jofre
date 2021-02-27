@@ -47,9 +47,9 @@
             <nav>
                 <ul >
                     <li > <a href="#Servicios">Servicios</a></li>
-                    <li ><a href="#containerGalery">Albañileria</a></li>
+                    <li ><a href="#galery">Galeria</a></li>
                     <li ><a href="#">Contacto</a></li>
-                    <li ><a class="active" href="#fff">Cotizar</a></li>
+                    <li ><a class="active" href="#">Cotizar</a></li>
                 </ul>
             </nav>
         </div>
@@ -94,15 +94,12 @@
         
     </div>
 
-
-
-
-
-    
     <!--Servicios-->
 
-
-    <div id="Servicios" class="trabajos">
+    <div class="espacionav" id="Servicios">
+    
+    </div>
+    <div class="trabajos">
         <p>Servicios</p>
     </div>
 
@@ -112,53 +109,61 @@
                 <div class="card">
                     <img src="/img/items/albañileria">
                     <h4>Albañileria</h4>
-                    <a href="#"><button class="button" > Ver más</button>  </a>
+                   <a href="#galery"> <button class="button" data-filter="albañileria"> Ver trabajos</button></a>
                 </div>
 
                 <div class="card">
                     <img src="/img/cubiertas/cubierta2.jpg">
                     <h4>Estructuras</h4>
-                    <a href="#"><button class="button" > Ver más</button>  </a>
+                    <a href="#galery"> <button class="button" data-filter="estructuras"> Ver trabajos</button></a>
                 </div>
 
                 <div class="card">
                     <img src="/img/techo/tumbados.jpg" >
                     <h4>Gypsum</h4>
-                    <a href="#"><button class="button" > Ver más</button>  </a> 
+                    <a href="#galery"> <button class="button" data-filter="gypsum"> Ver trabajos</button></a>
                 </div>
 
                 <div class="card">
                     <img src="/img/items/interiores.jpg" >
                     <h4>pintura Interiores</h4>
-                    <a href="#"><button class="button" > Ver más</button>  </a>  
+                    <a href="#galery"><button class="button" data-filter="pinturaInt"> Ver trabajos</button>  </a>
                 </div>
 
                 <div class="card">
                     <img src="/img/items/exteriores.png" >
                     <h4>Pintura de exteriores</h4>
-                    <a href="#"><button class="button" > Ver más</button>  </a>     
+                    <a href="#galery"><button class="button" data-filter="pinturaExt"> Ver trabajos</button> </a>   
                 </div>
 
                 <div class="card">
                     <img src="/img/items/decorativa.png" >
                     <h4>Pintura Decorativa</h4>
-                    <a href="#"><button class="button" > Ver más</button>  </a>    
+                    <a href="#galery"><button class="button" data-filter="pinturaDec"> Ver trabajos</button>  </a> 
                 </div>
             </div>
         </main>
 
 
     <!--Albañileria-->
+<div class="espacionav" id="galery">
 
-    <div class="wrapper">
+</div>
+
+    <div class="trabajos">
+        <p>Galería</p>
+    </div>
+
+
+    <div class="wrapper" >
         <ul>
-            <li class="list active" data-filter="all">Todo</li>
-            <li class="list " data-filter="albañileria">Albañileria</li>
-            <li class="list " data-filter="estructuras">Estructuras</li>
-            <li class="list " data-filter="gypsum">Gypsum</li>
-            <li class="list " data-filter="pinturaInt">Pintura Interiores</li>
-            <li class="list " data-filter="pinturaExt">Pintura Exteriores</li>
-            <li class="list " data-filter="pinturaDec">Pintura Decorativa</li>
+            <li class="list active" id="todo" data-filter="all">Todo</li>
+            <li class="list " id="alb" data-filter="albañileria">Albañileria</li>
+            <li class="list " id="est" data-filter="estructuras">Estructuras</li>
+            <li class="list " id="gyp" data-filter="gypsum">Gypsum</li>
+            <li class="list " id="int" data-filter="pinturaInt">Pintura Interiores</li>
+            <li class="list " id="ext" data-filter="pinturaExt">Pintura Exteriores</li>
+            <li class="list " id="dec" data-filter="pinturaDec">Pintura Decorativa</li>
         </ul>
 
         
@@ -191,21 +196,59 @@
     crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+
         $(document).ready(function(){
+           
             $('.list').click(function(){
-            const value = $(this).attr('data-filter');
+             value = $(this).attr('data-filter');
 
-            if (value == 'all'){
-                $('.itemBox').show('1000');
-            }else{
-                $('.itemBox').not('.'+value).hide('1000');
-                $('.itemBox').filter('.'+value).show('1000');    
-            }
-        })
 
+                if (value == 'all'){
+                    $('.itemBox').show('1000');
+                    }else{
+                        $('.itemBox').not('.'+value).hide('1000');
+                        $('.itemBox').filter('.'+value).show('1000');    
+                    }
+            })
+
+            $('.button').click(function(){
+                value = $(this).attr('data-filter');
+
+                if (value == 'all'){
+                    $('.itemBox').show('1000');
+                    }else{
+                        $('.itemBox').not('.'+value).hide('1000');
+                        $('.itemBox').filter('.'+value).show('1000');
+                            
+                    }
+                })
+
+    
         $('.list').click(function(){
             $(this).addClass('active').siblings().removeClass('active');
         })
+
+        $('.button').click(function(){
+            value = $(this).attr('data-filter');
+            valor = value;
+            if(valor == 'albañileria'){
+                $('#alb').addClass('active').siblings().removeClass('active');
+            }else if(valor == 'estructuras'){
+                $('#est').addClass('active').siblings().removeClass('active');
+            }else if(valor == 'gypsum'){
+                $('#gyp').addClass('active').siblings().removeClass('active');
+            }else if(valor == 'pinturaInt'){
+                $('#int').addClass('active').siblings().removeClass('active');
+            }else if(valor == 'pinturaExt'){
+                $('#ext').addClass('active').siblings().removeClass('active');
+            }else if(valor == 'pinturaDec'){
+                $('#dec').addClass('active').siblings().removeClass('active');
+            }else{
+                $('#todo').addClass('active').siblings().removeClass('active');
+            }
+            
+        })
+
 
     })
 
