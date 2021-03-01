@@ -6,6 +6,10 @@
     <title>Catalogo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </head>
 
 
@@ -48,7 +52,7 @@
                 <ul >
                     <li > <a href="#Servicios">Servicios</a></li>
                     <li ><a href="#galery">Galeria</a></li>
-                    <li ><a href="#">Contacto</a></li>
+                    <li ><a href="#contact">Contacto</a></li>
                     <li ><a class="active" href="#">Cotizar</a></li>
                 </ul>
             </nav>
@@ -109,37 +113,37 @@
                 <div class="card">
                     <img src="/img/items/albañileria">
                     <h4>Albañileria</h4>
-                   <a href="#galery"> <button class="button" data-filter="albañileria"> Ver trabajos</button></a>
+                   <a href="#galery"> <button class="button" data-filter="albañileria">Fotos</button></a>
                 </div>
 
                 <div class="card">
                     <img src="/img/cubiertas/cubierta2.jpg">
                     <h4>Estructuras</h4>
-                    <a href="#galery"> <button class="button" data-filter="estructuras"> Ver trabajos</button></a>
+                    <a href="#galery"> <button class="button" data-filter="estructuras"> Fotos</button></a>
                 </div>
 
                 <div class="card">
                     <img src="/img/techo/tumbados.jpg" >
                     <h4>Gypsum</h4>
-                    <a href="#galery"> <button class="button" data-filter="gypsum"> Ver trabajos</button></a>
+                    <a href="#galery"> <button class="button" data-filter="gypsum"> Fotos</button></a>
                 </div>
 
                 <div class="card">
                     <img src="/img/items/interiores.jpg" >
                     <h4>pintura Interiores</h4>
-                    <a href="#galery"><button class="button" data-filter="pinturaInt"> Ver trabajos</button>  </a>
+                    <a href="#galery"><button class="button" data-filter="pinturaInt"> Fotos</button>  </a>
                 </div>
 
                 <div class="card">
                     <img src="/img/items/exteriores.png" >
                     <h4>Pintura de exteriores</h4>
-                    <a href="#galery"><button class="button" data-filter="pinturaExt"> Ver trabajos</button> </a>   
+                    <a href="#galery"><button class="button" data-filter="pinturaExt"> Fotos</button> </a>   
                 </div>
 
                 <div class="card">
                     <img src="/img/items/decorativa.png" >
                     <h4>Pintura Decorativa</h4>
-                    <a href="#galery"><button class="button" data-filter="pinturaDec"> Ver trabajos</button>  </a> 
+                    <a href="#galery"><button class="button" data-filter="pinturaDec"> Fotos</button>  </a> 
                 </div>
             </div>
         </main>
@@ -147,14 +151,13 @@
 
     <!--Albañileria-->
 <div class="espacionav" id="galery">
-
 </div>
 
     <div class="trabajos">
         <p>Galería</p>
     </div>
 
-
+    
     <div class="wrapper" >
         <ul>
             <li class="list active" id="todo" data-filter="all">Todo</li>
@@ -168,28 +171,29 @@
 
         
                 <div class="product" >
-                    <div class="itemBox albañileria"> <img src="/img/albañileria/001.jpg"></div>
-                    <div class="itemBox albañileria"> <img src="/img/albañileria/001.jpg"></div>
-                    <div class="itemBox albañileria"> <img src="/img/albañileria/001.jpg"></div>
-                    <div class="itemBox albañileria"> <img src="/img/albañileria/001.jpg"></div>
+                    <div class="itemBox albañileria"> <a href="/img/albañileria/001.jpg" class="fancybox" data-fancybox="gallery1"><img src="/img/albañileria/001.jpg"width="100%" height="100%"></a></div>
+                    <div class="itemBox albañileria"> <a href="/img/albañileria/001.jpg" class="fancybox" data-fancybox="gallery1"><img src="/img/albañileria/001.jpg"width="100%" height="100%"></a></div>
+                    <div class="itemBox albañileria"> <a href="/img/albañileria/001.jpg" class="fancybox" data-fancybox="gallery1"><img src="/img/albañileria/001.jpg"width="100%" height="100%"></a></div>
+                    <div class="itemBox albañileria"> <a href="/img/albañileria/001.jpg" class="fancybox" data-fancybox="gallery1"><img src="/img/albañileria/001.jpg" ></a></div>
 
-                    <div class="itemBox estructuras"> <img src="/img/cubiertas/cubuerta1.jpg"></div>
-                    <div class="itemBox estructuras"> <img src="/img/cubiertas/cubuerta1.jpg"></div>
-                    <div class="itemBox estructuras"> <img src="/img/cubiertas/cubuerta1.jpg"></div>
+                    <div class="itemBox estructuras"> <a href="/img/cubiertas/cubuerta1.jpg" class="fancybox" data-fancybox="gallery2"></a><img src="/img/cubiertas/cubuerta1.jpg" width="100%" height="100%"></a></div>
+                    <div class="itemBox estructuras"> <a href="/img/cubiertas/cubuerta1.jpg" class="fancybox" data-fancybox="gallery2"><img src="/img/cubiertas/cubuerta1.jpg" width="100%" height="100%"></a></div>
+                    <div class="itemBox estructuras"> <a href="/img/cubiertas/cubuerta1.jpg" class="fancybox" data-fancybox="gallery2"><img src="/img/cubiertas/cubuerta1.jpg" width="100%" height="100%"></a></div>
 
-                    <div class="itemBox gypsum"> <img src="/img/techo/tumbados.jpg"></div>
+                    <div class="itemBox gypsum"> <a href="/img/techo/tumbados.jpg" class="fancybox" data-fancybox="gallery3"><img src="/img/techo/tumbados.jpg" ></a></div>
 
-                    <div class="itemBox pinturaInt"> <img src="/img/paredes/pared1.jpg"></div>
-                    <div class="itemBox pinturaInt"> <img src="/img/paredes/pared1.jpg"></div>
-                    <div class="itemBox pinturaInt"> <img src="/img/paredes/pared1.jpg"></div>
+                    <div class="itemBox pinturaInt"> <a href="/img/techo/tumbados.jpg" class="fancybox" data-fancybox="gallery4"> <img src="/img/paredes/pared1.jpg" width="100%" height="100%"></a></div>
+                    <div class="itemBox pinturaInt"> <a href="/img/techo/tumbados.jpg" class="fancybox" data-fancybox="gallery4"> <img src="/img/paredes/pared1.jpg" width="100%" height="100%"></a></div>
+                    <div class="itemBox pinturaInt"> <a href="/img/techo/tumbados.jpg" class="fancybox" data-fancybox="gallery4"> <img src="/img/paredes/pared1.jpg" width="100%" height="100%"></a></div>
 
-                    <div class="itemBox pinturaExt"> <img src="/img/items/exteriores.png"></div>
+                    <div class="itemBox pinturaExt"> <a href="/img/items/exteriores.png" class="fancybox" data-fancybox="gallery5"> <img src="/img/items/exteriores.png" width="100%" height="100%"></a></div>
 
-                    <div class="itemBox pinturaDec"> <img src="/img/items/decorativa.png"></div>
+                    <div class="itemBox pinturaDec"> <a href="/img/items/decorativa.png" class="fancybox" data-fancybox="gallery6"> <img src="/img/items/decorativa.png" width="100%" height="100%"></a></div>
 
                 </div> 
             </div>   
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" 
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
@@ -264,6 +268,50 @@
                         header.classList.toggle("sticky", window.scrollY > 0);
                     })
                 </script>
+<div class="espacionav" id="contact">
+</div>
+
+    <div class="trabajos">
+        <p>Contacto</p>
+    </div>
+
+                <footer>
+                    <div class="contact">
+
+                       <div class="contact_user">
+                            
+                        <i class="bi bi-geo-alt"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80px" height="160" style="margin: 0 100px 0 100px;" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                          </svg>
+                        
+                            <p id="contact_text">Quito - Ecuador</p>
+                        </div>
+
+                        <div class="contact_user">
+                            <i class="bi bi-telephone-forward"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="160" style="margin: 0 100px 0 100px;" fill="currentColor" class="bi bi-telephone-forward" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zm10.762.135a.5.5 0 0 1 .708 0l2.5 2.5a.5.5 0 0 1 0 .708l-2.5 2.5a.5.5 0 0 1-.708-.708L14.293 4H9.5a.5.5 0 0 1 0-1h4.793l-1.647-1.646a.5.5 0 0 1 0-.708z"/>
+                              </svg>
+                            <p id="contact_text">+593 97799439</p>
+                        </div>
+                        <div class="contact_user">
+                            <i class="bi bi-envelope"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="160" style="margin: 0 100px 0 100px;" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                              </svg>
+                            <p id="contact_text">vicente.jumbo@gmail.com</p>
+                        </div>
+                            
+                        </li>
+                    </div>
+
+
+                </footer>
+                <div class="container_business">
+                    <p id="business">Con más de 20 años de experiencia</p>
+                </div>
 
 </body>
 

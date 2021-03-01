@@ -1,5 +1,9 @@
 
+/*font style Logo*/
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+/*font style options*/
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
 
 *{
     
@@ -46,6 +50,7 @@ nav ul{
     padding: 0;
     text-transform: uppercase;
     margin-right: 5px;
+    font-family: 'Hind Siliguri', sans-serif;
     
 }
 
@@ -160,10 +165,9 @@ header.sticky{
 
 /*Usuario informacion*/
 .infouser{
-    padding-top: 20px;
+    padding-top: 40px;
     width: 100%;
-    height: 550px;
-    margin-top: 20px;
+    height: 650px;
 
 }
 
@@ -208,7 +212,7 @@ header.sticky{
     list-style: none;
     display: block;
     word-wrap:break-word;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
+    font-family: 'Hind Siliguri', sans-serif;
     font-weight: 400;
 
 }
@@ -225,6 +229,12 @@ header.sticky{
     font-size: 25px;
     text-indent: -10px;
 }
+
+.bi-geo-alt, .bi-telephone-forward, .bi-envelope{
+    color: green;
+    font-size: 30px;
+}
+
 
 
 /*cotizar*/
@@ -254,48 +264,35 @@ text-align: center;
 
   }
 
-
-
-
-
 .espacionav{
     height: 90px;
     width: 100%;
+    
 
 }
 
 .trabajos{
-    padding: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
-    
-    /*
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    border: 2px solid;
-    color: black;
 
-    */
+    color: black;
 }
 
 .trabajos p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
     text-align: center;
     color: black;
     text-transform: uppercase;
-    font-size: 25px;
-    letter-spacing: 0.05em;
+    font-size: 35px;
+    letter-spacing: 0.04em;
 }
 
 
 .trabajos p:hover{
-    text-decoration: underline green;
-    transition: 0.82s;
+    color: green;
+    text-decoration: underline black;
+
+    
 }
-
-
-
-
 
 .container{
     width: 100%;
@@ -305,13 +302,14 @@ text-align: center;
     justify-content: center;
     margin: auto;
     position: static;
+   
 }
 
 .container .card{
     
     background-size: cover;
     width: 300px;
-    height: 300px;
+    height: 320px;
     border-radius: 18px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     overflow: hidden;
@@ -330,24 +328,25 @@ text-align: center;
 }
 
 .container .card h4{
-    font-weight: 600;
+    font-weight: 500;
     color: black;
     text-transform: uppercase;
     padding: 5px;
+    font-size: 20px;
 }
 
 .container .card p{
     padding: 0 lrem;
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 20px;
+    
 }
 
 .container .card a{
     font-weight: 500;
     text-decoration: none;
     color: white;
-
+    
 }
 
 .button {
@@ -374,17 +373,26 @@ text-align: center;
  /*Galeria*/
 
  .wrapper ul{
+    
     display: flex;
-    margin-bottom: 10px;
+    margin-top: 40px;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    
 }
 
 .wrapper ul li{
     list-style: none;
     background: #eee;
     padding: 8px 20px;
-    margin: 5px;
+    margin: 1px;
     letter-spacing: 1px;
     cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+    background-color: rgba(128, 128, 128, 0.178);
+    
 }
 .wrapper ul li.active{
     background: green;
@@ -393,11 +401,11 @@ text-align: center;
 
 .product{
   width: 100%;
-  height: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: static;
+  background-color: rgba(128, 128, 128, 0.178);
 }
 
 .product .itemBox{
@@ -415,6 +423,51 @@ text-align: center;
     height: 100%;
     object-fit: cover;
 }
+
+.contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    position: static;
+    
+  }
+
+  .contact_user{
+      padding-top: 50px;
+  }
+
+.contact_user i{
+      position: relative;
+      height: 200px;
+      width: 200px;
+
+      
+  }
+   #contact_text{
+      color: black;
+      font-weight: 600;
+      
+      margin-bottom: 70px;
+  }
+
+  .container_business{
+    background-color: green;
+
+  }
+
+  #business{
+      width: auto;
+      color: white;
+      font-weight: 500;
+      justify-content: center;
+      text-align: center;
+
+
+  }
+  
+
 
 
 
