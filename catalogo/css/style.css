@@ -19,16 +19,16 @@ body{
 
 header{
     position: fixed;
-    top: 10px;
+    top: 0px;
     left: 0;
     width: 100%;
     box-sizing: border-box;
     background: rgba(0,0,0,0.2);
-    border: 2px solid;
     transition: 1s;
     z-index: 100;
 
-}
+} 
+
 
 .namelogo{
     float: left;
@@ -40,19 +40,19 @@ header{
     letter-spacing: 0.02em;
 }
 
-nav ul{
-
-    list-style: none;
+ul{
     float: right;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
     margin-right: 5px;
     font-family: 'Hind Siliguri', sans-serif;
     
 }
+
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+
 
 nav ul li a {
     color: #fff;
@@ -69,16 +69,77 @@ nav ul li a.active{
 }
 
 nav ul li a:hover{
-    background: blue;
+    background-color: green;
     border-radius: 6px;
     transition: 0.8s;
    
 }
 
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .namelogo{
+        font-size: 25px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        
+    }
+
+}
+
+@media (max-width: 772px){
+    .checkbtn{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 70%;
+        background: rgba(0, 0, 0, 0.856);
+        text-align: center;
+        top: 80px;
+        left: -120%;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        line-height: 30px;
+        
+    }
+    nav ul li a{
+       font-size: 20px; 
+    }
+
+    a:hover,:active{
+        background: none;
+        color: blue;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+
 header.sticky{
-    background: rgba(0, 0, 0, 0.856);
+    background: rgba(0, 0, 0, 0.966);
     transition: 2s;
-    top: -10px;
 }
 
 .containerlogo{
