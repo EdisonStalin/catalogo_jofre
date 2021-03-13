@@ -36,14 +36,14 @@ header{
     color: white;
     font-family: 'Cinzel Decorative';
     font-size: 30px;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 30px;
+    padding-left: 40px;
     letter-spacing: 0.02em;
    }
 
 nav ul{
     float: right;
-    margin-right: 5px;
+    margin-right: 50px;
     font-family: 'Hind Siliguri', sans-serif;
     
 }
@@ -60,17 +60,17 @@ nav ul li a {
     padding: 12px 30px;
     text-decoration: none;
     line-height: 500%;
-    font-size: 16px;
+    font-size: 20px;
     
 }
 nav ul li a.active{
-    background: green;
+    background: #1d682e;
     color:#fff;
     border-radius: 6px;
 }
 
 nav ul li a:hover{
-    background-color: green;
+    background-color: #1d682e;
     border-radius: 6px;
     transition: 0.8s;
    
@@ -151,7 +151,7 @@ header.sticky{
 
      .presupuesto_logo {
         border-radius: 4px;
-        background: green;
+        background: #28a745;
         border: none;
         color: white;
         padding: 15px 32px;
@@ -166,7 +166,7 @@ header.sticky{
       }
     
       .presupuesto_logo:hover{
-        background: blue;
+        background: #1d682e;
         transition: 1s;
       }
 
@@ -184,7 +184,8 @@ header.sticky{
 .infouser{
     padding-top: 70px;
     width: 100%;
-    height: 550px;
+    height: 750px;
+    
 }
 
 .infouser .subtittle{
@@ -192,6 +193,8 @@ header.sticky{
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 500;
+    font-size: 20px;
+    
 }
 .infouser .tittle{
     text-align: center;
@@ -200,9 +203,9 @@ header.sticky{
     color: green;
 }
 .infouser img {
-    margin-top: 50px;
+    margin-top: 20px;
     width: calc(100% / 1.5);
-    height: calc(650px / 1.5);
+    height: calc(950px / 1.5);
     float: right;
 }
 
@@ -210,7 +213,7 @@ header.sticky{
     margin-top: 100px;
     background-color: white;
     width: calc(100% / 2);
-    height: calc(650px / 2);
+    height: calc(950px / 2);
     position: absolute;
     left: 30px;
    
@@ -219,21 +222,21 @@ header.sticky{
 .photo .container_punto{
     margin-left: 10px;
     position: relative;
-    left: -30px;
+    left: 20px;
     
 }
 
 .punto{
     padding-top: 10px;
     margin: 15px;
-    font-size: 17px;
+    font-size: 21px;
     padding-left: 10px;
     color: rgba(0, 0, 0, 0.8);
     list-style: none;
     display: block;
     word-wrap:break-word;
     font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 
 }
 
@@ -252,8 +255,8 @@ header.sticky{
 }
 
 .bi-geo-alt, .bi-telephone-forward, .bi-envelope{
-    color: green;
-    font-size: 30px;
+    color: black;
+
 }
 
  .fa-arrow-circle-right{
@@ -270,7 +273,7 @@ text-align: center;
 
  .presupuesto {
     border-radius: 4px;
-    background: green;
+    background: #28a745;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -284,13 +287,13 @@ text-align: center;
   }
 
   .presupuesto:hover{
-    background: blue;
+    background: #1d682e;
     transition: 1s;
 
   }
 
 .espacionav{
-    height: 90px;
+    height: 120px;
     width: 100%;
     
 
@@ -302,18 +305,17 @@ text-align: center;
 
 .trabajos p{
     font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     color: black;
     text-transform: uppercase;
-    font-size: 35px;
-    letter-spacing: 0.04em;
+    font-size: 45px;
+    letter-spacing: 0.4em;
 }
 
 
 .trabajos p:hover{
-    color: green;
-    text-decoration: underline black;
+    color: #1d682e;
 }
 
 .container{
@@ -327,11 +329,11 @@ text-align: center;
 
 .container .card{
     width: auto;
-    height: 270px;
+    height: 400px;
     border-radius: 18px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
     background-color: white;
-    margin: 20px;
+    margin: 15px;
     text-align: center;
     transition: all 0.25s;
     position: relative;
@@ -340,7 +342,7 @@ text-align: center;
 
 .left img{
     width: calc(100% / 2.7);
-    height: 250px;
+    height: 380px;
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
@@ -353,7 +355,7 @@ text-align: center;
 .right img{
     margin-top: 10px;
     width: calc(100% / 2.7);
-    height: 250px;
+    height: 380px;
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0,0,0,0.2);
@@ -364,28 +366,28 @@ text-align: center;
 .content_right{
     margin: 10px 10px 0 0;
     width: 60%;
-    height: 250px;
+    height: 380px;
     float: right;
+    
 
 }
 
 .content_left{
     margin: 10px 0 0 10px;
     width: 60%;
-    height: 250px;
+    height: 380px;
     float: left;
 }
 
 
 .content_right h4{
     text-align: center;
-    
     width: 100%;
     font-weight: 500;
     color: black;
     text-transform: uppercase;
     padding: 5px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -396,16 +398,18 @@ text-align: center;
     color: black;
     text-transform: uppercase;
     padding: 5px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
 .content_right table{
     text-align: left;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     width: 100%;
-    height: 150px;
+    height: 200px;
+    justify-content: center;
+    
   
 }
 
@@ -413,15 +417,16 @@ text-align: center;
 .content_left table{
     text-align: left;
     padding: 0 10px 0 10px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     width: 100%;
-    height: 150px;
+    height: 250px;
    
 }
 
   table, td {
     list-style-position: inside;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
   }
 
@@ -436,7 +441,7 @@ text-align: center;
 .button {
     width: 40%;
     border-radius: 4px;
-    background: green;
+    background: #28a745;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -444,13 +449,16 @@ text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    
   }
 
-  .button:hover{
-    background: blue;
-    transition: 1s;
+  /*Colores a escojer
+  --green: #28a745;
+  --teal: #20c997;
+  */
 
+  .button:hover{
+    background: #1d682e;
+    transition: 1s;
   }
 
 
@@ -469,18 +477,22 @@ text-align: center;
 .wrapper ul li{
     list-style: none;
     background: #eee;
-    padding: 8px 20px;
-    margin: 1px;
+    padding: 1px 20px;
+    border-radius: 8px;
+    margin: 20px 0 20px 0;
     letter-spacing: 1px;
     cursor: pointer;
     font-size: 20px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
-    background-color: rgba(128, 128, 128, 0.178);
-    
+    text-transform: uppercase;  
+
 }
+
 .wrapper ul li.active{
-    background: green;
-    color: #fff;
+    height: 1px ; 
+    width: auto;
+    background: #1d682e;
+
+    
 }
 
 .product{
@@ -489,15 +501,14 @@ text-align: center;
   flex-wrap: wrap;
   justify-content: center;
   position: static;
-  background: rgba(0, 213, 255, 0.719);
-  background: radial-gradient(circle, rgba(0, 213, 255, 0.404) 0%,rgba(9, 102, 121, 0.705) 100%);
+
 }
 
 .product .itemBox{
     position: relative;
     width: 300px;
     height: 320PX;
-    margin: 5PX;
+    margin: 10PX;
 }
 
 .product .itemBox img{
@@ -509,53 +520,38 @@ text-align: center;
     object-fit: cover;
 }
 
+
+/*Contacto*/
 .contact{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    position: static;
+    position: relative;
+    
     
   }
 
-  .contact_user{
+  .contact img{
+      position: absolute;
       padding-top: 50px;
+      width: 100%;
+      height: 900px;
+      opacity: 0.6;
+      z-index: -2;
   }
 
-.contact_user i{
+  .contact_user{
+      padding-top: 200px;
       position: relative;
-      height: 200px;
-      width: 200px;
-
-      
   }
-   #contact_text{
-      color: black;
+
+  .contact_user p{
       font-weight: 600;
-      
-      margin-bottom: 70px;
+      font-size: 25px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
-
-  .container_business{
-    background-color: green;
-
-  }
-
-  #business{
-      width: auto;
-      color: white;
-      font-weight: 500;
-      justify-content: center;
-      text-align: center;
-
-
-  }
-  
-
-
-
-
 
 }
 
@@ -612,7 +608,7 @@ text-align: center;
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
         font-size: 40px;
-        color: green;
+        color: #28a745;
     }
     .infouser img {
         margin-top: 0px;
