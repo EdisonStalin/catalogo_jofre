@@ -256,7 +256,8 @@ header.sticky{
 
 .bi-geo-alt, .bi-telephone-forward, .bi-envelope{
     color: black;
-
+    width:100px;
+    height:160px;
 }
 
  .fa-arrow-circle-right{
@@ -538,7 +539,7 @@ text-align: center;
       padding-top: 50px;
       width: 100%;
       height: 900px;
-      opacity: 0.6;
+      opacity: 0.4;
       z-index: -2;
   }
 
@@ -555,84 +556,221 @@ text-align: center;
 
 }
 
-@media (max-width: 850px){
-    .checkbtn{
-        display: block;
-    }
-
-    nav ul{
+@media (max-width: 1300px){
+    
+    header{
         position: fixed;
-        width: auto;
-        background: rgba(0, 0, 0, 0.8);
-        top: 80px;
-        right: -100%;
-        transition: all .5s;
-        
+        top: 20px;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background: rgb(3,28,33);
+        background: linear-gradient(90deg, rgba(3,28,33,1) 0%, rgba(9,103,121,1) 50%, rgba(0, 213, 255, 0.548) 100%);
+        z-index: 100;
+        transition: all;
+        transition: 1s;
+    } 
+    
+    
+    .namelogo{
+        float: left;
+        color: white;
+        font-family: 'Cinzel Decorative';
+        font-size: 30px;
+        padding-top: 25px;
+        padding-left: 30px;
+        letter-spacing: 0.02em;
+       }
+    
+    nav ul{
+        float: right;
+        margin-right: 30px;
+        font-family: 'Hind Siliguri', sans-serif;   
     }
-
+    
     nav ul li{
-        display: block;
+        display: inline-block;
         line-height: 30px;
+        margin: 0 5px;
+    }
+    
+    
+    nav ul li a {
+        color: #fff;
+        padding: 14px 30px;
+        text-decoration: none;
+        line-height: 500%;
+        font-size: 17px;
         
     }
-    nav ul li a{
-       font-size: 20px; 
-    }
 
-    a:hover,:active{
-        background: none;
-        color: blue;
+    nav ul li a.active{
+        background: #1d682e;
+        color:#fff;
+        border-radius: 6px;
     }
-
-    #check:checked ~ ul{
-        right: -5px;
-        top: 80px;
+    
+    nav ul li a:hover{
+        background-color: #1d682e;
+        border-radius: 6px;
+        transition: 0.8s;
+       
     }
-
+    
+    .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #check{
+        display: none;
+    }  
+    
+    
+    header.sticky{
+        background: rgb(3,28,33);
+        background: linear-gradient(90deg, rgba(3,28,33,1) 0%, rgba(9,103,121,1) 50%, rgba(0, 213, 255, 0.548) 100%);
+        top: 0;
+        transition: 0.7s;
+    }
+    
+    .containerlogo{
+        background-size: cover;
+        background-position:center;
+        position: relative;
+        width: 100%;
+        padding-top: 60%;
+        
+    }
+    
+    .containerlogo .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+    
+    .containerlogo .logo.logo1{
+        background: url('/img/logo/house.jpg');
+        background-size: cover;
+        clip-path: polygon(0 0, 75% 0, 35% 100%, 0 100%);
+        
+        
+    }
+    
+    .containerlogo .logo.logo2{
+        background: url('/img/logo/sala.jpg');
+        background-size: cover;
+        clip-path: polygon(75% 0, 100% 0, 100% 100%, 35% 100%);
+        
+    }
+    
+    .containerlogo:hover .logo{
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        transition: 0.8s;
+    }
+    
+    .containerlogo .logo:hover{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        
+    }
+    
+    .container_presupuesto_logo {
+    
+        text-align: center;
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        }
+    
+         .presupuesto_logo {
+            border-radius: 4px;
+            background: #28a745;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            
+    
+          }
+        
+          .presupuesto_logo:hover{
+            background: #1d682e;
+            transition: 1s;
+          }
+    
+    .location{
+        margin: 30px;
+        text-align: center;
+        position: absolute;
+        top: 60%;
+    
+    }
+    
+    
     
     /*Usuario informacion*/
     .infouser{
-        padding-top: 40px;
+        padding-top: 70px;
         width: 100%;
-        height: 450px;
+        height: 530px;
        
+        
     }
-
+    
     .infouser .subtittle{
         text-align: center;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.8);
         font-weight: 500;
+        font-size: 20px;
+        
     }
+
     .infouser .tittle{
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
         font-size: 40px;
-        color: #28a745;
+        color: green;
     }
     .infouser img {
-        margin-top: 0px;
-        width: 0;
-        height: 0;
+        margin-top: 20px;
+        width: calc(100% / 1.7);
+        height: calc(650px / 1.5);
         float: right;
-        display: none;
     }
-
-    .infouser .photo {
-        margin-top: 0px;
-        background-color: white;
-        width: calc(100% / 2);
-        height: auto;
-        position: absolute;
     
+    .infouser .photo {
+        margin-top: 70px;
+        background-color: white;
+        width: calc(100% / 1.8);
+        height: calc(650px / 2);
+        position: absolute;
+        left: 30px;
+       
     }
-
-    .photo ul{
-        margin-left: 30px;
+    
+    .photo .container_punto{
+        margin-left: 10px;
+        position: relative;
+        left: 0px;
+        
     }
-
-    .photo li{
-        padding-top: 10px;
+    
+    .punto{
+        padding-top: 0px;
         margin: 15px;
         font-size: 17px;
         padding-left: 10px;
@@ -641,10 +779,1412 @@ text-align: center;
         display: block;
         word-wrap:break-word;
         font-family: 'Hind Siliguri', sans-serif;
-        font-weight: 400;
+        font-weight: 500;
+    
+    }
+    
+    /*icon check*/
+    
+    .fa-check-circle{
+        color: green;
+        font-size: 27px;
+        margin: 5px;
+    }
+    
+    .fa-whatsapp{
+        color: white;
+        font-size: 25px;
+        text-indent: -10px;
+    }
+    
+    .bi-geo-alt, .bi-telephone-forward, .bi-envelope{
+        color: black;
+        width:80px;
+        height:140px;
+    
+    }
+    
+     .fa-arrow-circle-right{
+        color: green;
+        font-size: 20px;
+    }
+    
+    
+    /*cotizar*/
+    .container_presupuesto {
+    margin: 30px;
+    text-align: center;
+    }
+    
+     .presupuesto {
+        border-radius: 4px;
+        background: #28a745;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .presupuesto:hover{
+        background: #1d682e;
+        transition: 1s;
+    
+      }
+    
+    .espacionav{
+        height: 100px;
+        width: 100%;
+    }
+    
+    .trabajos{
+        color: black;
+    }
+    
+    .trabajos p{
+        font-family: 'Hind Siliguri', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-size: 35px;
+        letter-spacing: 0.3em;
+    }
+    
+    
+    .trabajos p:hover{
+        color: #1d682e;
+    }
+    
 
+
+    .container{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+       
+    }
+    
+    .container .card{
+        width: auto;
+        height: 320px;
+        border-radius: 18px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        background-color: white;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+        
+    }
+    
+    .left img{
+        width: calc(100% / 2.7);
+        height: 300px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        position: absolute;
+        right: 0%;
+    
+    }
+    
+    .right img{
+        margin-top: 10px;
+        width: calc(100% / 2.7);
+        height: 300px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        position: absolute;
+        left: 0%;
+    }
+    
+    .content_right{
+        margin: 10px 10px 0 0;
+        width: 60%;
+        height: 300px;
+        float: right;
+        
+    
+    }
+    
+    .content_left{
+        margin: 10px 0 0 10px;
+        width: 60%;
+        height: 300px;
+        float: left;
+    }
+    
+    
+    .content_right h4{
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+        color: black;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 25px;
+    }
+    
+    
+    .content_left h4{
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+        color: black;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 25px;
+    }
+    
+    
+    .content_right table{
+        text-align: left;
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        
+      
+    }
+    
+    
+    .content_left table{
+        text-align: left;
+        padding: 0 10px 0 10px;
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+        height: 200px;
+        
+       
+    }
+    
+      table, td {
+        list-style-position: inside;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+      }
+    
+    .container .card a{
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        top: 0px;
+        
+    }
+    
+    .button {
+        width: 40%;
+        border-radius: 4px;
+        background: #28a745;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    
+      /*Colores a escojer
+      --green: #28a745;
+      --teal: #20c997;
+      */
+    
+      .button:hover{
+        background: #1d682e;
+        transition: 1s;
+      }
+    
+    
+     /*Galeria*/
+    
+     .wrapper ul{
+        display: flex;
+        margin-top: 20px;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-weight: 600;
+        justify-content: center;
+        
+    }
+    
+    .wrapper ul li{
+        list-style: none;
+        background: #eee;
+        padding: 1px 20px;
+        border-radius: 8px;
+        margin: 20px 0 20px 0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-size: 17px;
+        text-transform: uppercase;  
+    
+    }
+    
+    .wrapper ul li.active{
+        height: 1px ; 
+        width: auto;
+        background: #1d682e;
+    }
+    
+    
+.product{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: static;
+  
+  }
+  
+  .product .itemBox{
+      position: relative;
+      width: 300px;
+      height: 320PX;
+      margin: 10PX;
+  }
+  
+  .product .itemBox img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  
+    
+    
+    /*Contacto*/
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        
+      }
+    
+      .contact img{
+          position: absolute;
+          padding-top: 50px;
+          width: 100%;
+          height: 690px;
+          opacity: 0.4;
+          z-index: -2;
+          
+      }
+    
+      .contact_user{
+          padding-top: 200px;
+          position: relative;
+      }
+    
+      .contact_user p{
+          font-weight: 600;
+          font-size: 20px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+}
+
+
+
+@media (max-width: 1000px){
+    
+    header{
+        position: fixed;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background: rgb(3,28,33);
+        background: linear-gradient(90deg, rgba(3,28,33,1) 0%, rgba(9,103,121,1) 50%, rgba(0, 213, 255, 0.548) 100%);
+        z-index: 100;
+        transition: all;
+        transition: 1s;
+    } 
+    
+    
+    .namelogo{
+        float: left;
+        color: white;
+        font-family: 'Cinzel Decorative';
+        font-size: 25px;
+        padding-top: 25px;
+        padding-left: 20px;
+        letter-spacing: 0.02em;
+       }
+    
+    nav ul{
+        float: right;
+        margin-right: 10px;
+        font-family: 'Hind Siliguri', sans-serif;   
+    }
+    
+    nav ul li{
+        display: inline-block;
+        line-height: 30px;
+        margin: 0 0px;
+    }
+    
+    
+    nav ul li a {
+        color: #fff;
+        padding: 10px 25px;
+        text-decoration: none;
+        line-height: 500%;
+        font-size: 15px;
+        
     }
 
+    nav ul li a.active{
+        background: #1d682e;
+        color:#fff;
+        border-radius: 6px;
+    }
+    
+    nav ul li a:hover{
+        background-color: #1d682e;
+        border-radius: 6px;
+        transition: 0.8s;
+       
+    }
+    
+    .checkbtn{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    
+    #check{
+        display: none;
+    }  
+    
+    
+    header.sticky{
+        background: rgb(3,28,33);
+        background: linear-gradient(90deg, rgba(3,28,33,1) 0%, rgba(9,103,121,1) 50%, rgba(0, 213, 255, 0.548) 100%);
+        top: 0;
+        transition: 0.7s;
+    }
+    
+    .containerlogo{
+        background-size: cover;
+        background-position:center;
+        position: relative;
+        width: 100%;
+        padding-top: 60%;
+        
+    }
+    
+    .containerlogo .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+    
+    .containerlogo .logo.logo1{
+        background: url('/img/logo/house.jpg');
+        background-size: cover;
+        clip-path: polygon(0 0, 75% 0, 35% 100%, 0 100%);
+        
+        
+    }
+    
+    .containerlogo .logo.logo2{
+        background: url('/img/logo/sala.jpg');
+        background-size: cover;
+        clip-path: polygon(75% 0, 100% 0, 100% 100%, 35% 100%);
+        
+    }
+    
+    .containerlogo:hover .logo{
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        transition: 0.8s;
+    }
+    
+    .containerlogo .logo:hover{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        
+    }
+    
+    .container_presupuesto_logo {
+    
+        text-align: center;
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        }
+    
+         .presupuesto_logo {
+            border-radius: 4px;
+            background: #28a745;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 12px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            
+    
+          }
+        
+          .presupuesto_logo:hover{
+            background: #1d682e;
+            transition: 1s;
+          }
+    
+    .location{
+        margin: 30px;
+        text-align: center;
+        position: absolute;
+        top: 60%;
+    
+    }
+    
+    
+    
+    /*Usuario informacion*/
+    .infouser{
+        padding-top: 70px;
+        width: 100%;
+        height: 450px;
+        
+    }
+    
+    .infouser .subtittle{
+        text-align: center;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 500;
+        font-size: 17px;
+        
+    }
+
+    .infouser .tittle{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
+        font-size: 35px;
+        color: green;
+    }
+    .infouser img {
+        margin-top: 20px;
+        width: calc(100% / 1.6);
+        height: calc(550px / 1.5);
+        float: right;
+    }
+    
+    .infouser .photo {
+        margin-top: 50px;
+        background-color: white;
+        width: calc(100% / 1.5);
+        height: calc(550px / 2);
+        position: absolute;
+        left: 30px;
+       
+    }
+    
+    .photo .container_punto{
+        margin-left: 10px;
+        position: relative;
+        left: 0px;
+        
+    }
+    
+    .punto{
+        padding-top: 0px;
+        margin: 15px;
+        font-size: 15px;
+        padding-left: 10px;
+        color: rgba(0, 0, 0, 0.8);
+        list-style: none;
+        display: block;
+        word-wrap:break-word;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-weight: 500;
+    
+    }
+    
+    /*icon check*/
+    
+    .fa-check-circle{
+        color: green;
+        font-size: 22px;
+        margin: 5px;
+    }
+    
+    .fa-whatsapp{
+        color: white;
+        font-size: 25px;
+        text-indent: -10px;
+    }
+    
+    .bi-geo-alt, .bi-telephone-forward, .bi-envelope{
+        color: black;
+        width:80px;
+        height:140px;
+    
+    }
+    
+     .fa-arrow-circle-right{
+        color: green;
+        font-size: 20px;
+    }
+    
+    
+    /*cotizar*/
+    .container_presupuesto {
+    margin: 30px;
+    text-align: center;
+    }
+    
+     .presupuesto {
+        border-radius: 4px;
+        background: #28a745;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .presupuesto:hover{
+        background: #1d682e;
+        transition: 1s;
+    
+      }
+    
+    .espacionav{
+        height: 80px;
+        width: 100%;
+    }
+    
+    .trabajos{
+        color: black;
+    }
+    
+    .trabajos p{
+        font-family: 'Hind Siliguri', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-size: 28px;
+        letter-spacing: 0.2em;
+    }
+    
+    
+    .trabajos p:hover{
+        color: #1d682e;
+    }
+    
+
+
+    .container{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+       
+    }
+    
+    .container .card{
+        width: auto;
+        height: 280px;
+        border-radius: 18px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        background-color: white;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+        
+    }
+    
+    .left img{
+        width: calc(100% / 2.7);
+        height: 260px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        position: absolute;
+        right: 0%;
+    
+    }
+    
+    .right img{
+        margin-top: 10px;
+        width: calc(100% / 2.7);
+        height: 260px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        position: absolute;
+        left: 0%;
+    }
+    
+    .content_right{
+        margin: 10px 10px 0 0;
+        width: 60%;
+        height: 260px;
+        float: right;
+        
+   
+    
+    }
+    
+    .content_left{
+        margin: 10px 0 0 10px;
+        width: 60%;
+        height: 260px;
+        float: left;
+      
+    }
+    
+    
+    .content_right h4{
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+        color: black;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 20px;
+    }
+    
+    
+    .content_left h4{
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+        color: black;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 20px;
+    }
+    
+    
+    .content_right table{
+        text-align: left;
+        font-size: 15px;
+        padding: 0 10px 0 10px;
+        font-weight: 400;
+        width: 100%;
+        height: 180px;
+        justify-content: center;
+        
+      
+    }
+    
+    
+    .content_left table{
+        text-align: left;
+        padding: 0 10px 0 10px;
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        height: 180px;
+
+    }
+    
+      table, td {
+        list-style-position: inside;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+      }
+    
+    .container .card a{
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        top: 0px;
+        
+    }
+    
+    .button {
+        width: 40%;
+        border-radius: 4px;
+        background: #28a745;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+      }
+    
+      /*Colores a escojer
+      --green: #28a745;
+      --teal: #20c997;
+      */
+    
+      .button:hover{
+        background: #1d682e;
+        transition: 1s;
+      }
+    
+    
+     /*Galeria*/
+    
+     .wrapper ul{
+        top: 20px;
+        margin: 10px;
+        position: relative;
+        display: inline-block;
+        width: auto;
+        margin-top: 10px;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-weight: 600;
+        justify-content: center;
+     }
+     .wrapper ul li{
+        list-style: none;
+        background-color: rgba(0,0,0,0.2);
+        padding: 10px 20px;
+        border-radius: 8px;
+        margin: 5px 0 0px 0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-size: 14px;
+        text-transform: uppercase;  
+    
+    }
+    
+    .wrapper ul li.active{
+        height: auto; 
+        width: auto;
+        background: #1d682fd8;
+    }
+
+
+
+    .product{
+      width: 75%;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      left: 25%;
+      top: -330px;
+    }
+    
+    .product .itemBox{
+        position: relative;
+        width: 270px;
+        height: 270PX;
+        margin: 7PX;
+    }
+    
+    .product .itemBox img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    /*Contacto*/
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        
+      }
+    
+      .contact img{
+          position: absolute;
+          padding-top: 50px;
+          width: 100%;
+          height: 690px;
+          opacity: 0.4;
+          z-index: -2;
+          
+      }
+    
+      .contact_user{
+          padding-top: 200px;
+          position: relative;
+      }
+    
+      .contact_user p{
+          font-weight: 600;
+          font-size: 20px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+
+}
+
+
+@media (max-width: 800px){
+    .checkbtn{
+        display: block;
+    }
+
+    header{
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background: rgb(3,28,33);
+        background: linear-gradient(90deg, rgba(3,28,33,1) 0%, rgba(9,103,121,1) 50%, rgba(0, 213, 255, 0.548) 100%);
+        z-index: 100;
+        transition: all;
+        transition: 1s;
+    } 
+
+    .namelogo{
+        float: left;
+        color: white;
+        font-family: 'Cinzel Decorative';
+        font-size: 20px;
+        padding-top: 25px;
+        padding-left: 20px;
+        letter-spacing: 0.02em;
+    }
+
+
+    nav ul{
+        position: fixed;
+        width: auto;
+        background: rgba(0, 0, 0, 0.8);
+        top: 80px;
+        right: -100%;
+        transition: all .5s;
+        margin-right: 10px;
+        font-family: 'Hind Siliguri', sans-serif;  
+        
+    }
+
+    nav ul li{
+        display: block;
+        line-height: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        line-height: 500%;
+        font-size: 17px;
+    }
+
+
+    #check:checked ~ ul{
+        right: -10px;
+        top: 80px;
+    }
+
+    nav ul li a.active{
+        background: #1d682e;
+        color:#fff;
+        border-radius: 6px;
+    }
+    
+    nav ul li a:hover{
+        background-color: #1d682e;
+        border-radius: 6px;
+        transition: 0.8s;
+       
+    }
+    
+    /*disable*/
+    header.sticky{
+        background: rgb(3,28,33);
+        background: linear-gradient(90deg, rgba(3,28,33,1) 0%, rgba(9,103,121,1) 50%, rgba(0, 213, 255, 0.548) 100%);
+        top: 0;
+        transition: 0.7s;
+    }
+    
+    .containerlogo{
+        background-size: cover;
+        background-position:center;
+        position: relative;
+        width: 100%;
+        padding-top: 60%;
+        
+    }
+    
+    .containerlogo .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+    }
+    
+    .containerlogo .logo.logo1{
+        background: url('/img/logo/house.jpg');
+        background-size: cover;
+        clip-path: polygon(0 0, 75% 0, 35% 100%, 0 100%);
+        
+        
+    }
+    
+    .containerlogo .logo.logo2{
+        background: url('/img/logo/sala.jpg');
+        background-size: cover;
+        clip-path: polygon(75% 0, 100% 0, 100% 100%, 35% 100%);
+        
+    }
+    
+    .containerlogo:hover .logo{
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        transition: 0.8s;
+    }
+    
+    .containerlogo .logo:hover{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        
+    }
+    
+    .container_presupuesto_logo {
+    
+        text-align: center;
+        position: absolute;
+        top: 60%;
+        width: 100%;
+        }
+    
+         .presupuesto_logo {
+            border-radius: 4px;
+            background: #28a745;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            
+    
+          }
+        
+          .presupuesto_logo:hover{
+            background: #1d682e;
+            transition: 1s;
+          }
+    
+    .location{
+        margin: 0px;
+        text-align: center;
+        position: absolute;
+        top: 60%;
+    
+    }
+    
+    
+    
+    /*Usuario informacion*/
+    .infouser{
+        padding-top: 70px;
+        width: 100%;
+        height: 530px;
+       
+        
+    }
+    
+    .infouser .subtittle{
+        text-align: center;
+        text-transform: uppercase;
+        color: rgba(0, 0, 0, 0.8);
+        font-weight: 500;
+        font-size: 20px;
+        
+    }
+
+    .infouser .tittle{
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
+        font-size: 40px;
+        color: green;
+    }
+    .infouser img {
+        margin-top: 20px;
+        width: calc(100% / 1.7);
+        height: calc(650px / 1.5);
+        float: right;
+    }
+    
+    .infouser .photo {
+        margin-top: 70px;
+        background-color: white;
+        width: calc(100% / 1.8);
+        height: calc(650px / 2);
+        position: absolute;
+        left: 30px;
+       
+    }
+    
+    .photo .container_punto{
+        margin-left: 10px;
+        position: relative;
+        left: 0px;
+        
+    }
+    
+    .punto{
+        padding-top: 0px;
+        margin: 15px;
+        font-size: 17px;
+        padding-left: 10px;
+        color: rgba(0, 0, 0, 0.8);
+        list-style: none;
+        display: block;
+        word-wrap:break-word;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-weight: 500;
+    
+    }
+    
+    /*icon check*/
+    
+    .fa-check-circle{
+        color: green;
+        font-size: 27px;
+        margin: 5px;
+    }
+    
+    .fa-whatsapp{
+        color: white;
+        font-size: 25px;
+        text-indent: -10px;
+    }
+    
+    .bi-geo-alt, .bi-telephone-forward, .bi-envelope{
+        color: black;
+        width:80px;
+        height:140px;
+    
+    }
+    
+     .fa-arrow-circle-right{
+        color: green;
+        font-size: 20px;
+    }
+    
+    
+    /*cotizar*/
+    .container_presupuesto {
+    margin: 30px;
+    text-align: center;
+    }
+    
+     .presupuesto {
+        border-radius: 4px;
+        background: #28a745;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    
+      .presupuesto:hover{
+        background: #1d682e;
+        transition: 1s;
+    
+      }
+    
+    .espacionav{
+        height: 100px;
+        width: 100%;
+    }
+    
+    .trabajos{
+        color: black;
+    }
+    
+    .trabajos p{
+        font-family: 'Hind Siliguri', sans-serif;
+        font-weight: 600;
+        text-align: center;
+        color: black;
+        text-transform: uppercase;
+        font-size: 35px;
+        letter-spacing: 0.3em;
+    }
+    
+    
+    .trabajos p:hover{
+        color: #1d682e;
+    }
+    
+
+
+    .container{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin: auto;
+        position: relative;
+       
+    }
+    
+    .container .card{
+        width: auto;
+        height: 320px;
+        border-radius: 18px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        background-color: white;
+        margin: 10px;
+        text-align: center;
+        position: relative;
+        
+    }
+    
+    .left img{
+        width: calc(100% / 2.7);
+        height: 300px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        position: absolute;
+        right: 0%;
+    
+    }
+    
+    .right img{
+        margin-top: 10px;
+        width: calc(100% / 2.7);
+        height: 300px;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+        position: absolute;
+        left: 0%;
+    }
+    
+    .content_right{
+        margin: 10px 10px 0 0;
+        width: 60%;
+        height: 300px;
+        float: right;
+        
+    
+    }
+    
+    .content_left{
+        margin: 10px 0 0 10px;
+        width: 60%;
+        height: 300px;
+        float: left;
+    }
+    
+    
+    .content_right h4{
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+        color: black;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 25px;
+    }
+    
+    
+    .content_left h4{
+        text-align: center;
+        width: 100%;
+        font-weight: 500;
+        color: black;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 25px;
+    }
+    
+    
+    .content_right table{
+        text-align: left;
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+        height: 200px;
+        justify-content: center;
+        
+      
+    }
+    
+    
+    .content_left table{
+        text-align: left;
+        padding: 0 10px 0 10px;
+        font-size: 18px;
+        font-weight: 400;
+        width: 100%;
+        height: 200px;
+        
+       
+    }
+    
+      table, td {
+        list-style-position: inside;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+      }
+    
+    .container .card a{
+        font-weight: 500;
+        text-decoration: none;
+        color: white;
+        position: relative;
+        top: 0px;
+        
+    }
+    
+    .button {
+        width: 40%;
+        border-radius: 4px;
+        background: #28a745;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+      }
+    
+      /*Colores a escojer
+      --green: #28a745;
+      --teal: #20c997;
+      */
+    
+      .button:hover{
+        background: #1d682e;
+        transition: 1s;
+      }
+    
+    
+     /*Galeria*/
+    
+     .wrapper ul{
+        display: flex;
+        margin-top: 20px;
+        font-family: 'Hind Siliguri', sans-serif;
+        font-weight: 600;
+        justify-content: center;
+        
+    }
+    
+    .wrapper ul li{
+        list-style: none;
+        background: #eee;
+        padding: 1px 20px;
+        border-radius: 8px;
+        margin: 20px 0 20px 0;
+        letter-spacing: 1px;
+        cursor: pointer;
+        font-size: 17px;
+        text-transform: uppercase;  
+    
+    }
+    
+    .wrapper ul li.active{
+        height: 1px ; 
+        width: auto;
+        background: #1d682e;
+    }
+    
+    .product{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: static;
+    
+    }
+    
+    .product .itemBox{
+        position: relative;
+        width: 270px;
+        height: 270PX;
+        margin: 7PX;
+    }
+    
+    .product .itemBox img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    
+    /*Contacto*/
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        
+      }
+    
+      .contact img{
+          position: absolute;
+          padding-top: 50px;
+          width: 100%;
+          height: 690px;
+          opacity: 0.4;
+          z-index: -2;
+          
+      }
+    
+      .contact_user{
+          padding-top: 200px;
+          position: relative;
+      }
+    
+      .contact_user p{
+          font-weight: 600;
+          font-size: 20px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
 
 
 }
