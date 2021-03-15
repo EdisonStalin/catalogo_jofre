@@ -1342,8 +1342,8 @@ text-align: center;
     
     .bi-geo-alt, .bi-telephone-forward, .bi-envelope{
         color: black;
-        width:80px;
-        height:140px;
+        width:70px;
+        height:120px;
     
     }
     
@@ -1640,7 +1640,7 @@ text-align: center;
     
       .contact_user p{
           font-weight: 600;
-          font-size: 20px;
+          font-size: 18px;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
@@ -1651,12 +1651,14 @@ text-align: center;
 @media (max-width: 800px){
     .checkbtn{
         display: block;
+        
     }
 
     header{
         position: fixed;
         top: 0px;
         left: 0;
+        height: 60px;
         width: 100%;
         box-sizing: border-box;
         background: rgb(3,28,33);
@@ -1670,8 +1672,8 @@ text-align: center;
         float: left;
         color: white;
         font-family: 'Cinzel Decorative';
-        font-size: 20px;
-        padding-top: 25px;
+        font-size: 18px;
+        padding-top: 20px;
         padding-left: 20px;
         letter-spacing: 0.02em;
     }
@@ -1681,10 +1683,10 @@ text-align: center;
         position: fixed;
         width: auto;
         background: rgba(0, 0, 0, 0.8);
-        top: 80px;
+        top: 60px;
         right: -100%;
         transition: all .5s;
-        margin-right: 10px;
+        margin-right: 5px;
         font-family: 'Hind Siliguri', sans-serif;  
         
     }
@@ -1695,7 +1697,7 @@ text-align: center;
     }
 
     nav ul li a{
-        font-size: 15px;
+        font-size: 17px;
         color: #fff;
         padding: 10px 20px;
         text-decoration: none;
@@ -1706,7 +1708,7 @@ text-align: center;
 
     #check:checked ~ ul{
         right: -10px;
-        top: 80px;
+        top: 60px;
     }
 
     nav ul li a.active{
@@ -1786,11 +1788,11 @@ text-align: center;
             background: #28a745;
             border: none;
             color: white;
-            padding: 15px 32px;
+            padding: 10px 20px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            font-size: 16px;
+            font-size: 11px;
             text-transform: uppercase;
             opacity: 0.8;
             
@@ -1816,7 +1818,7 @@ text-align: center;
     .infouser{
         padding-top: 70px;
         width: 100%;
-        height: 530px;
+        height: 400px;
        
         
     }
@@ -1826,44 +1828,46 @@ text-align: center;
         text-transform: uppercase;
         color: rgba(0, 0, 0, 0.8);
         font-weight: 500;
-        font-size: 20px;
+        font-size: 16px;
         
     }
 
     .infouser .tittle{
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
-        font-size: 40px;
+        font-size: 34px;
         color: green;
     }
     .infouser img {
-        margin-top: 20px;
+        margin-top: 10px;
         width: calc(100% / 1.7);
         height: calc(650px / 1.5);
         float: right;
+        display: none;
     }
     
     .infouser .photo {
-        margin-top: 70px;
+        margin-top: 30px;
         background-color: white;
-        width: calc(100% / 1.8);
+        width: 100%;
         height: calc(650px / 2);
         position: absolute;
-        left: 30px;
+        left: 0px;
        
     }
     
     .photo .container_punto{
         margin-left: 10px;
         position: relative;
-        left: 0px;
+        left: -10px;
+        text-align: center;
         
     }
     
     .punto{
         padding-top: 0px;
         margin: 15px;
-        font-size: 17px;
+        font-size: 15px;
         padding-left: 10px;
         color: rgba(0, 0, 0, 0.8);
         list-style: none;
@@ -1878,7 +1882,7 @@ text-align: center;
     
     .fa-check-circle{
         color: green;
-        font-size: 27px;
+        font-size: 20px;
         margin: 5px;
     }
     
@@ -1890,8 +1894,9 @@ text-align: center;
     
     .bi-geo-alt, .bi-telephone-forward, .bi-envelope{
         color: black;
-        width:80px;
-        height:140px;
+        width:40px;
+        height:100px;
+        
     
     }
     
@@ -1912,11 +1917,11 @@ text-align: center;
         background: #28a745;
         border: none;
         color: white;
-        padding: 15px 32px;
+        padding: 10px 15px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 12px;
         text-transform: uppercase;
         margin-left: auto;
         margin-right: auto;
@@ -1929,7 +1934,7 @@ text-align: center;
       }
     
     .espacionav{
-        height: 100px;
+        height: 70px;
         width: 100%;
     }
     
@@ -1937,14 +1942,15 @@ text-align: center;
         color: black;
     }
     
+    
     .trabajos p{
         font-family: 'Hind Siliguri', sans-serif;
         font-weight: 600;
         text-align: center;
         color: black;
         text-transform: uppercase;
-        font-size: 35px;
-        letter-spacing: 0.3em;
+        font-size: 25px;
+        letter-spacing: 0.1em;
     }
     
     
@@ -1976,41 +1982,43 @@ text-align: center;
     }
     
     .left img{
-        width: calc(100% / 2.7);
-        height: 300px;
-        margin: 10px;
+        width: 100%;
+        height: 320px;
+        margin: 0px;
         border-radius: 8px;
         box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         position: absolute;
         right: 0%;
+        opacity: 0.3;
     
     }
     
     .right img{
-        margin-top: 10px;
-        width: calc(100% / 2.7);
-        height: 300px;
-        margin: 10px;
+        margin-top: 0px;
+        width: 100%;
+        height: 320px;
+        margin: 0px;
         border-radius: 8px;
         box-shadow: 0 2px 2px rgba(0,0,0,0.2);
         position: absolute;
         left: 0%;
+        opacity: 0.3;
     }
     
     .content_right{
-        margin: 10px 10px 0 0;
-        width: 60%;
+        margin: 0px 0px 0 0;
+        width: 100%;
         height: 300px;
         float: right;
-        
-    
+        position: relative;
     }
     
     .content_left{
-        margin: 10px 0 0 10px;
-        width: 60%;
+        margin: 0px 0 0 0px;
+        width: 100%;
         height: 300px;
         float: left;
+        position: relative;
     }
     
     
@@ -2021,7 +2029,7 @@ text-align: center;
         color: black;
         text-transform: uppercase;
         padding: 5px;
-        font-size: 25px;
+        font-size: 18px;
     }
     
     
@@ -2032,30 +2040,29 @@ text-align: center;
         color: black;
         text-transform: uppercase;
         padding: 5px;
-        font-size: 25px;
+        font-size: 18px;
     }
     
     
     .content_right table{
         text-align: left;
-        font-size: 18px;
+        padding: 0 0 0 0;
+        font-size: 15px;
         font-weight: 400;
         width: 100%;
         height: 200px;
-        justify-content: center;
-        
-      
+        padding-left: calc(100% / 15);
     }
     
     
     .content_left table{
         text-align: left;
-        padding: 0 10px 0 10px;
-        font-size: 18px;
+        padding: 0 0 0 0;
+        font-size: 15px;
         font-weight: 400;
         width: 100%;
         height: 200px;
-        
+        padding-left: calc(100% / 15);
        
     }
     
@@ -2080,11 +2087,11 @@ text-align: center;
         background: #28a745;
         border: none;
         color: white;
-        padding: 15px 32px;
+        padding: 12px 25px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
+        font-size: 14px;
       }
     
       /*Colores a escojer
@@ -2099,47 +2106,52 @@ text-align: center;
     
     
      /*Galeria*/
-    
      .wrapper ul{
+        top: 20px;
+        margin: 0px;
+        position: relative;
         display: flex;
-        margin-top: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 10px;
         font-family: 'Hind Siliguri', sans-serif;
         font-weight: 600;
         justify-content: center;
-        
-    }
-    
-    .wrapper ul li{
+     }
+
+     .wrapper ul li{
         list-style: none;
-        background: #eee;
-        padding: 1px 20px;
+        background-color: rgba(0,0,0,0.2);
+        padding: 10px 10px;
         border-radius: 8px;
-        margin: 20px 0 20px 0;
+        margin: 5px 2px 0px 2px;
         letter-spacing: 1px;
         cursor: pointer;
-        font-size: 17px;
+        font-size: 12px;
         text-transform: uppercase;  
     
     }
     
     .wrapper ul li.active{
-        height: 1px ; 
+        height: auto; 
         width: auto;
-        background: #1d682e;
+        background: #1d682fd8;
     }
-    
+
+
+
     .product{
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      position: static;
-    
+      position: relative;
+      left: 0%;
+      top: 20px;
     }
     
     .product .itemBox{
         position: relative;
-        width: 270px;
+        width: 300px;
         height: 270PX;
         margin: 7PX;
     }
@@ -2167,22 +2179,23 @@ text-align: center;
     
       .contact img{
           position: absolute;
-          padding-top: 50px;
+          padding-top: 30px;
           width: 100%;
-          height: 690px;
+          height: auto;
           opacity: 0.4;
           z-index: -2;
-          
       }
     
       .contact_user{
-          padding-top: 200px;
+          padding-top: 0px;
           position: relative;
+          padding: 180px 0 0 0;
+          margin: 0 0 0 0 ;
       }
     
       .contact_user p{
           font-weight: 600;
-          font-size: 20px;
+          font-size: 16px;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
 
@@ -2191,11 +2204,44 @@ text-align: center;
 
 
 
+@media (max-width: 400px){
+ /*Contacto*/
+ .contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    
+  }
+
+  .contact img{
+      position: absolute;
+      padding-top: 30px;
+      width: 100%;
+      height: 400px;
+      opacity: 0.4;
+      z-index: -2;
+  }
+
+  .contact_user{
+      padding-top: 0px;
+      position: relative;
+      padding: 10px 0 0 0;
+      margin: 0 0 0 0 ;
+  }
+
+  .contact_user p{
+      font-weight: 600;
+      font-size: 16px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
 
 
+}
 
-
-
+ 
 
 
 
