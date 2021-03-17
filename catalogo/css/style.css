@@ -117,7 +117,7 @@ header.sticky{
 }
 
 .containerlogo .logo.logo1{
-    background: url('/img/logo/house.jpg');
+    background: url('/img/favoritos/house.jpg');
     background-size: cover;
     clip-path: polygon(0 0, 75% 0, 35% 100%, 0 100%);
     
@@ -125,7 +125,7 @@ header.sticky{
 }
 
 .containerlogo .logo.logo2{
-    background: url('/img/logo/sala.jpg');
+    background: url('/img/favoritos/sala.jpg');
     background-size: cover;
     clip-path: polygon(75% 0, 100% 0, 100% 100%, 35% 100%);
     
@@ -658,7 +658,7 @@ text-align: center;
     }
     
     .containerlogo .logo.logo1{
-        background: url('/img/logo/house.jpg');
+        background: url('/img/favoritos/house.jpg');
         background-size: cover;
         clip-path: polygon(0 0, 75% 0, 35% 100%, 0 100%);
         
@@ -666,7 +666,7 @@ text-align: center;
     }
     
     .containerlogo .logo.logo2{
-        background: url('/img/logo/sala.jpg');
+        background: url('/img/favoritos/sala.jpg');
         background-size: cover;
         clip-path: polygon(75% 0, 100% 0, 100% 100%, 35% 100%);
         
@@ -1202,7 +1202,7 @@ text-align: center;
     }
     
     .containerlogo .logo.logo1{
-        background: url('/img/logo/house.jpg');
+        background: url('/img/favoritos/house.jpg');
         background-size: cover;
         clip-path: polygon(0 0, 75% 0, 35% 100%, 0 100%);
         
@@ -1210,7 +1210,7 @@ text-align: center;
     }
     
     .containerlogo .logo.logo2{
-        background: url('/img/logo/sala.jpg');
+        background: url('/img/favoritos/sala.jpg');
         background-size: cover;
         clip-path: polygon(75% 0, 100% 0, 100% 100%, 35% 100%);
         
@@ -1698,18 +1698,18 @@ text-align: center;
         display: block;
         line-height: 0px;
         margin: 0 0px;
-        height: 75px;
+        height: 55px;
         width: auto;
     }
 
     nav ul li a{
         font-size: 18px;
         color: #fff;
-        padding: 15px 50px 10px 15px;
+        padding: 12px 50px 10px 12px;
         margin: 0 0 0 0;
         text-decoration: none;
         line-height: auto;
-        font-size: 17px;     
+        font-size: 16px;     
     }
 
     #check:checked ~ ul{
@@ -1764,7 +1764,7 @@ text-align: center;
     }
     
     .containerlogo .logo.logo1{
-        background: url('/img/logo/house.jpg');
+        background: url('/img/favoritos/house.jpg');
         background-size: cover;
         clip-path: polygon(0 0, 75% 0, 35% 100%, 0 100%);
         
@@ -1772,7 +1772,7 @@ text-align: center;
     }
     
     .containerlogo .logo.logo2{
-        background: url('/img/logo/sala.jpg');
+        background: url('/img/favoritos/sala.jpg');
         background-size: cover;
         clip-path: polygon(75% 0, 100% 0, 100% 100%, 35% 100%);
         
