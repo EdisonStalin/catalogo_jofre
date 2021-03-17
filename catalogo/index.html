@@ -255,7 +255,7 @@
     <div class="wrapper" >
         <ul>
             
-            <li class="list active" id="todo" data-filter="all">Todo</li>
+            <li class="list active" id="todo" data-filter="all">Recientes</li>
             <li class="list " id="alb" data-filter="albañileria">Albañileria</li>
             <li class="list " id="est" data-filter="estructuras">Estructuras</li>
             <li class="list " id="gyp" data-filter="gypsum">Gypsum</li>
@@ -303,10 +303,10 @@
 
 
                 if (value == 'all'){
-                    $('.itemBox').show('1000');
+                    $('.itemBox').show('1');
                     }else{
-                        $('.itemBox').not('.'+value).hide('1000');
-                        $('.itemBox').filter('.'+value).show('1000');    
+                        $('.itemBox').not('.'+value).hide('1');
+                        $('.itemBox').filter('.'+value).show('1');    
                     }
             })
 
@@ -314,10 +314,10 @@
                 value = $(this).attr('data-filter');
 
                 if (value == 'all'){
-                    $('.itemBox').show('1000');
+                    $('.itemBox').show('2');
                     }else{
-                        $('.itemBox').not('.'+value).hide('1000');
-                        $('.itemBox').filter('.'+value).show('1000');
+                        $('.itemBox').not('.'+value).hide('2');
+                        $('.itemBox').filter('.'+value).show('2');
                             
                     }
                 })
