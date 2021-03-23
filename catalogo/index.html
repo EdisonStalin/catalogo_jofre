@@ -64,6 +64,17 @@
             </nav>
     </header>
 
+    <div class="container_whatsapp">
+        <section id="whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=593997799439&text=Buenas%2C%20me%20interesa%20realizar%20una%20cotizaci%C3%B3n." class="active" href="#"><i class="fa fa-whatsapp"></i></a>
+            
+        </section>
+
+        <p>Escribenos</p>
+    </div> 
+
+
+
 
 
     <!--Vicente-->
@@ -127,8 +138,8 @@
                                 <td><i class="fa fa-arrow-circle-right"></i> Plomeria.</td>
                             </tr>
                             <tr>
-                              <td><i class="fa fa-arrow-circle-right"></i> Intalación de ceramica y porcelanato.</td>
-                              <td><i class="fa fa-arrow-circle-right"></i> Tratamiento contra el salitre y Humedades</td>
+                              <td><i class="fa fa-arrow-circle-right"></i> Ceramica y Porcelanato.</td>
+                              <td><i class="fa fa-arrow-circle-right"></i> Tratamiento contra el salitre</td>
                             </tr>
                           </table>
 
@@ -232,10 +243,21 @@
                 <img src="/img/favoritos/decorativa.png" >
                     <div class="content_left">
                         <h4>Pintura Decorativa</h4>
-                        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
-                            el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
-                            que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró
-                            hacer un libro de textos especimen.</p>
+                        <table>
+                            <tr>
+                                <td><i class="fa fa-arrow-circle-right"></i> Grafiado.</td>
+                                <td><i class="fa fa-arrow-circle-right"></i> Fachaleta</td>
+                            </tr>
+                            
+                            <tr>
+                                <td><i class="fa fa-arrow-circle-right"></i> Piedra decorativa.</td>
+                                <td><i class="fa fa-arrow-circle-right"></i> Tumbados.</td>
+                            </tr>
+                            <tr>
+                              <td><i class="fa fa-arrow-circle-right"></i> Paredes.</td>
+                              <td><i class="fa fa-arrow-circle-right"></i> Diseños.</td>
+                            </tr>
+                          </table>
                         <a href="#galery"><button class="button" data-filter="pinturaDec"> Ver trabajos</button>  </a> 
                     </div>
                 </div>
@@ -332,9 +354,11 @@
                     $('.itemBox').not('.'+value).hide('1000');
                     $('.itemBox').filter('.'+value).show('1000');  
                     $('#rec').addClass('active').siblings().removeClass('active');
+                    
                     }else{
                         $('.itemBox').not('.'+value).hide('1000');
-                        $('.itemBox').filter('.'+value).show('1000');    
+                        $('.itemBox').filter('.'+value).show('1000'); 
+                        $('#rec').removeClass('active')
                     }
             })
 
@@ -344,7 +368,7 @@
                 if (value == 'all'){
                     $('.itemBox').not('.'+value).hide('1000');
                     $('.itemBox').filter('.'+value).show('1000');  
-                    $('#rec').addClass('active').siblings().removeClass('active');
+                    
                     }else{
                         $('.itemBox').not('.'+value).hide('1000');
                         $('.itemBox').filter('.'+value).show('1000');
@@ -355,7 +379,7 @@
     
         $('.list').click(function(){
             $(this).addClass('active').siblings().removeClass('active');
-            $('.itemBox').not('.'+value).hide('1');
+            
             
         })
 

@@ -12,8 +12,69 @@
     
 }
 body{
-    background: #eee; 
+    background-color:#eee;
+    
 }
+
+.container_whatsapp #whatsapp{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    color: black;
+    border-radius: 50%;
+    background-color: green;
+    z-index: 100;
+    right: 0;
+    right: 20px;
+    bottom: 30px;
+    animation-name: container_icon;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: 2;
+}
+
+@keyframes container_icon {
+    0% { background: rgba(255, 0, 0, 0.596); }
+    50% {  background: rgba(0, 0, 255, 0.829);}
+    100%{  background: rgba(128, 0, 128, 0.89);}
+}
+
+
+#whatsapp i{
+    color: white;
+    position: relative;
+    left: 20px;
+    top: 7px;
+    font-size: 35px;
+}
+
+.container_whatsapp p{
+    color: white;
+    position: fixed;
+    z-index: 80;
+    right: 50px;
+    bottom: 45px;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: green;
+    padding: 5px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    opacity: 0;
+    animation-name: move;
+    animation-timing-function: ease-in-out;
+    animation-duration: 15s;
+    animation-delay: 2s;
+}
+
+@keyframes move{
+    0% {  right: 80px; opacity: 0;}
+    50% {  right: 80px; opacity: 1;}
+    100%{  right: 80px; opacity: 0;}
+}
+
+
+
 
 @media (max-width: 10000px){
     
@@ -1798,7 +1859,7 @@ text-align: center;
     
          .presupuesto_logo {
             border-radius: 4px;
-            background: #28a745;
+            background: #035e18;
             border: none;
             color: white;
             padding: 5px 20px;
@@ -1874,22 +1935,30 @@ text-align: center;
         position: relative;
         left: -20px;
         text-align: center;
-        
     }
-    
+
+
     .punto{
         padding-top: 0px;
         margin: 15px;
-        font-size: 15px;
+        font-size: 17px;
         padding-left: 10px;
         color: rgba(0, 0, 0, 0.8);
         list-style: none;
         display: block;
         word-wrap:break-word;
         font-family: 'Hind Siliguri', sans-serif;
-        font-weight: 500;
+        font-weight: initial;
     
     }
+
+
+    
+   
+
+
+   
+
     
     /*icon check*/
     
@@ -1897,6 +1966,7 @@ text-align: center;
         color: green;
         font-size: 20px;
         margin: 5px;
+        z-index: 200;
     }
     
     .fa-whatsapp{
@@ -2038,7 +2108,7 @@ text-align: center;
     .content_right h4{
         text-align: center;
         width: 100%;
-        font-weight: 500;
+        font-weight: 600;
         color: black;
         text-transform: uppercase;
         padding: 5px;
@@ -2049,7 +2119,7 @@ text-align: center;
     .content_left h4{
         text-align: center;
         width: 100%;
-        font-weight: 500;
+        font-weight: 600;
         color: black;
         text-transform: uppercase;
         padding: 5px;
@@ -2060,19 +2130,19 @@ text-align: center;
     .content_right table{
         text-align: left;
         padding: 0 0 0 0;
-        font-size: 15px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 500;
         width: 100%;
         height: 200px;
         padding-left: calc(100% / 15);
+        
     }
-    
     
     .content_left table{
         text-align: left;
         padding: 0 0 0 0;
-        font-size: 15px;
-        font-weight: 400;
+        font-size: 16px;
+        font-weight: 500;
         width: 100%;
         height: 200px;
         padding-left: calc(100% / 15);
@@ -2215,6 +2285,8 @@ text-align: center;
           font-size: 16px;
           font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
+
+
 
 
 }
